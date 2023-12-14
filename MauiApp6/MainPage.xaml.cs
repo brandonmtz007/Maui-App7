@@ -83,8 +83,4 @@ namespace MauiApp6
             await Navigation.PushAsync(Something);
         }
     }
-
-    internal class GuardarUsuario : Page
-    {
-    }
 }

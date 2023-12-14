@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="MauiApp6.GuardarUsuario"
+Title="GuardarUsuario">
+    <ScrollView>
+        <StackLayout Padding="5">
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Capturar Usuario" HorizontalTextAlignment="Center"
+TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Nombre del usuario" FontSize="Medium"/>
+            <Entry x:Name="nombre" FontSize="Medium"/>
+            <Label Text="Nombre de usuario" FontSize="Medium"/>
+            <Entry x:Name="usuario" FontSize="Medium"/>
+            <Label Text="Contraseña" FontSize="Medium"/>
+            <Entry x:Name="contrasena" FontSize="Medium" IsPassword="True"/>
+            <Label Text="" x:Name="resultado" FontSize="Medium" FontAttributes="Bold"/>
+            <Button Text="Guardar" CornerRadius="4" BackgroundColor="Violet"
+TextColor="White" Clicked="Button_Clicked"/>
+            <Button Text="Ya tengo Cuenta" CornerRadius="4"
+BackgroundColor="MediumPurple" TextColor="White" Clicked="Button_Clicked2"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

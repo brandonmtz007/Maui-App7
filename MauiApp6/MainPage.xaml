@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="MauiApp6.MainPage"
+NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <VerticalStackLayout Margin="30,30,30,5">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="usuario.png" HeightRequest="120"/>
+            </StackLayout>
+            <Label Text="Usuario" FontSize="Medium" />
+            <Border Stroke="black" StrokeThickness="1" StrokeShape="RoundRectangle
+15">
+                <Entry x:Name="usuario" FontSize="Medium"/>
+            </Border>
+            <Label Text="Contraseña" FontSize="Medium" Margin="0,15,0,0"/>
+            <Border Stroke="black" StrokeThickness="1" StrokeShape="RoundRectangle
+15">
+                <Entry x:Name="contrasena" FontSize="Medium" IsPassword="True"/>
+            </Border>
+            <Button Text="Entrar" FontSize="Medium"
+BackgroundColor="DarkSlateBlue" TextColor="White"
+Clicked="Button_Clicked" Margin="0,15,0,0"/>
+            <Button Text="No tengo cuenta" FontSize="Medium"
+BackgroundColor="MediumPurple" TextColor="White"
+Clicked="Button_Clicked2" Margin="0,15,0,0"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Label Text="Recordar el usuario" VerticalOptions="Center"/>
+                <Switch x:Name="recordar" VerticalOptions="Center"/>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
